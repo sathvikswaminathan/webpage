@@ -59,6 +59,7 @@ include:
 exclude:
   - README.md
   - LICENSE.md
+  - vendor
 
 plugins:
   - jekyll-seo-tag
@@ -66,4 +67,3 @@ plugins:
   - jekyll-email-protect
   - jekyll-target-blank
 
-  exclude: [vendor]
