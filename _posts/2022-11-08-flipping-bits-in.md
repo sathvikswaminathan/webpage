@@ -3,8 +3,6 @@ layout: post
 title: Paper Summary - Flipping Bits in Memory Without Accessing Them
 ---
 
-## Introduction
-
 [Forget Software—Now Hackers Are Exploiting Physics](https://www.wired.com/2016/08/new-form-hacking-breaks-ideas-computers-work/) - read one of the headlines on Wired.
 
 Contrary to typical software-based exploits, researchers at Google showed that, by inducing electrical interference between memory cells, they could flip bits in memory. When applied to privilege bits, this attack can result in privilege escalation, allowing the attacker to take control of the system.
