@@ -25,8 +25,10 @@ The below figure presents the lower-level organization of a DRAM chip. The chip 
 The wordline controls access to all the memory cells in a given row and is raised to a high voltage when a memory cell needs to be accessed. The bitline connects all the memory cells in the vertical direction to the row buffer. This allows a row to transfer its data to the row buffer when it is accessed. Subsequent access to the same row is served by the row buffer.
 
 Accessing data in a DRAM bank occurs in three steps:
-The desired row in a DRAM bank is accessed by raising the corresponding wordline. This transfers the data from the row into the row buffer. The row buffer's data is accessed by reading/writing to any of the desired columns
-If the row is no longer required, it is closed by lowering the voltage on the wordine.
+
+- The desired row in a DRAM bank is accessed by raising the corresponding wordline. This transfers the data from the row into the row buffer. 
+- The row buffer's data is accessed by reading/writing to any of the desired columns
+- If the row is no longer required, it is closed by lowering the voltage on the wordine.
 
 The charge stored in memory cells is not persistent. Mechanisms such as subthreshold leakage and gate-induced drain leakage cause charge leakage in a DRAM cell. Because of this, the charge in a memory cell has a retention time ~ 64 ns. Before the charge leaks beyond its noise margin, it needs to be refreshed at least once. Reading out charge from the memory cells into the row buffer is a destructive process - a process that destroys data in the cells - and writes back the charge into the cells, effectively refreshing it. To prevent data loss, the memory controller activates the wordline of all the rows once every 64 ns.
 
