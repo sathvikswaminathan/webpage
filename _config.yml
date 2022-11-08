@@ -5,7 +5,7 @@ description: Incoming Intern at NVIDIA | Undergraduate Student | BITS Pilani
 
 baseurl: / #name of GitHub repository
 url: "" #custom url to be used instead of GitHub repository
-email: #
+email: sathvikswaminathan@gmail.com
 
 # Pagination
 paginate: 4
