@@ -3,7 +3,7 @@ layout: post
 title: Paper Summary - Flipping Bits in Memory Without Accessing Them
 ---
 
-**Introduction**
+## Introduction
 
 [Forget Software—Now Hackers Are Exploiting Physics](https://www.wired.com/2016/08/new-form-hacking-breaks-ideas-computers-work/) - read one of the headlines on Wired.
 
@@ -17,7 +17,7 @@ Increasing the memory cell density has the well-known advantage of reducing the 
 
 If a cell is disturbed beyond its noise margin, then it'll experience a disturbance error. It has been shown that it takes as few as 139K reads to a DRAM row to induce a disturbance error.
 
-**DRAM Operation**
+## DRAM Operation
 
 The below figure presents the lower-level organization of a DRAM chip. The chip consists of a 2-dimensional structure comprised of memory cells. Each memory cell consists of a capacitor to hold charge and a pass transistor to enable access to the capacitor.
 
@@ -30,7 +30,7 @@ If the row is no longer required, it is closed by lowering the voltage on the wo
 
 The charge stored in memory cells is not persistent. Mechanisms such as subthreshold leakage and gate-induced drain leakage cause charge leakage in a DRAM cell. Because of this, the charge in a memory cell has a retention time ~ 64 ns. Before the charge leaks beyond its noise margin, it needs to be refreshed at least once. Reading out charge from the memory cells into the row buffer is a destructive process - a process that destroys data in the cells - and writes back the charge into the cells, effectively refreshing it. To prevent data loss, the memory controller activates the wordline of all the rows once every 64 ns.
 
-**The attack**
+## The attack
 The root cause for a DRAM disturbance error is voltage fluctuations on the wordline. When a DRAM row is accessed multiple times, the wordline keeps toggling between ON and OFF leading to voltage fluctuations. This has been shown to interfere with the cells in nearby rows and cause them to leak charge at an accelerated rate. If the cell loses charge before it is refreshed, it experiences a disturbance error.
 
 The below code is used to demonstrate this attack on 
