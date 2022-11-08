@@ -17,7 +17,7 @@ If a cell is disturbed beyond its noise margin, then it'll experience a disturba
 
 ## DRAM Operation
 
-The below figure presents the lower-level organization of a DRAM chip. The chip consists of a 2-dimensional structure comprised of memory cells. Each memory cell consists of a capacitor to hold charge and a pass transistor to enable access to the capacitor.
+A DRAM chip consists of a 2-dimensional structure comprised of memory cells. Each memory cell consists of a capacitor to hold charge and a pass transistor to enable access to the capacitor.
 
 
 The wordline controls access to all the memory cells in a given row and is raised to a high voltage when a memory cell needs to be accessed. The bitline connects all the memory cells in the vertical direction to the row buffer. This allows a row to transfer its data to the row buffer when it is accessed. Subsequent access to the same row is served by the row buffer.
