@@ -47,4 +47,4 @@ Intel/AMD machines.
 
 Lines 2 and 3 access memory addresses that map to two different rows in the same DRAM bank. This results in toggling of the wordline. Lines 4 and 5 ensure that subsequent accesses to X and Y result in a DRAM access. Line 6 ensures that the above code is serialized. Finally, line 7 jumps back to the beginning of the loop for another iteration of reading from DRAM.
 
-As DRAM process technology scales down to smaller dimensions, this attack presents an even greater threat to existing computer systems.
+As DRAM process technology scales down to smaller dimensions, this vulnerability poses an even greater threat to computer systems.
