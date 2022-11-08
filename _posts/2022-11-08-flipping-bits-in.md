@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flipping Bits in Memory Without Accessing Them
+title: Paper Summary - Flipping Bits in Memory Without Accessing Them
 ---
 
 **Introduction**
