@@ -9,7 +9,7 @@ published: true
 
 Hi there! I am Sathvik Swaminathan, a 4th year undergraduate student double majoring in Physics and Electronics and Communication Engineering at BITS Pilani.
 
-My areas of interests encompasses Computer Systems and ASIC Design, with a research emphasis on designing high performant and secure systems!
+My areas of interests encompasses Computer Systems and ASIC Design, with a research emphasis on designing high performance and secure systems!
 
 I'll be joining NVIDIA as an ASIC Design Intern and am currently interning at the Processor Architecture Research Lab (PAR-L) at Intel!
 
